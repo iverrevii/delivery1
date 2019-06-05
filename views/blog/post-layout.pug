@@ -1,0 +1,13 @@
+extends ../layout
+block head
+  // CSS file for each post
+  link(rel="stylesheet" href="/css/post-styles.min.css?v=1")
+
+append content
+  #post-container
+    
+block footer
+  footer#footer
+    a#footer-link(href='/blog')
+      #footer-content
+        img#footer-logo(src='/img/logo_bare.png', alt='Abdullah\'s logo')

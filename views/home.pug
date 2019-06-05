@@ -1,0 +1,60 @@
+extends layout
+
+block scripts
+  script(src="https://cdn.jsdelivr.net/npm/clientjs@0.1.11/dist/client.min.js")
+  script
+    | document.getElementById("email-link").addEventListener("click",function(){prompt("Welcome to QDelivery: ","100% Secure and Anonymous.")});
+    | if(window.document.documentMode !== undefined){document.write("<script src=\"/js/homepage-oldie.js?v=1\"></scr"+"ipt>")} else{(document.write("<script async src=\"/js/homepage.js?v=2\"></scr"+"ipt>"))};
+
+append content
+  #links
+    p.size-limit-nav
+      a(target="_blank" href="" rel="noopener") Chat
+      span.dash |
+    p.size-limit-nav
+      a(target="_blank" href="" rel="noopener") placeholder
+      span.dash |
+    p.size-limit-nav
+      a(href="/bloga") placeholder
+      span.dash |
+    p.size-limit-nav
+      a(href="#" id="email-link" title="click to see") placeholder
+  #intro
+    h2#main-heading.headline.size-limit-heading.hide(data-text="Hello, stranger.") Hello#[span#notFirstVisit.hide  again], stranger.
+    p#intro-text.size-limit-text.hide Well, you aren't really
+      br
+      |  a stranger to me, 
+      span.client-info#ip-address
+      | .  
+      br
+      | You're viewing this page using 
+      span.client-info#browser
+      br.line-break
+      |  on 
+      span.client-info#operating-system
+      |  from  
+      span.client-info#place
+      br
+      br.line-break
+      | Now, you're probably wondering 
+      br.line-break
+      |  who we are.
+    h2#about-me.size-limit-heading.hide.glitch(data-text="Welcome to QDelivery.") Welcome to QDelivery.
+
+    p#about-text.size-limit-text.hide We are a courier service. We send goods to LOCATIONS.  
+      br
+      | We use blockchain technology and zero-knowledge encryption methods
+      br.line-break
+      |  to keep you 100% safe and anonymous. 
+      br.line-break
+      |  We operate in secrecy, there will be no human-to-human interaction required.
+      br
+      br
+      |  Need more information? Go chat to our 24/7 customer service. 
+      // br
+      // |  To see what I've already worked on, head over to #[a.link.size-limit-nav(href="/lab" rel="noopener") #[em my lab]].
+      br.line-break
+      |  All will be explained there.
+      br
+      br
+      | Remember keeping you SAFE and ANONYMOUS is our top PRIORITY.

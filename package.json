@@ -18,7 +18,7 @@
   "homepage": "http://khanabdullah.com",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "pug": "^2.0.3"
   },
   "devDependencies": {
